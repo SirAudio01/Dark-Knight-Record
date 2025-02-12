@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dark Knight Records</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="/assets/index-4ddda2f4.css">
+</head>
+<body>
+  <div id="particles-js"></div>
+  <div class="tech-circuit"></div>
+  
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo-container">
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+          <defs>
+            <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#00ff8c;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#ff00ff;stop-opacity:1" />
+            </linearGradient>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+              <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+          <text x="50%" y="50%" text-anchor="middle" fill="url(#logo-gradient)" font-size="36" font-family="Space Mono" dy=".3em" filter="url(#glow)">Dark Knight Records</text>
+          <path d="M20,50 L380,50" stroke="url(#logo-gradient)" stroke-width="2" filter="url(#glow)">
+            <animate attributeName="stroke-dasharray" from="0,400" to="400,0" dur="3s" repeatCount="indefinite" />
+          </path>
+        </svg>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#artists">Artists</a></li>
+        <li><a href="#releases">Releases</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#upload">Upload</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="hero-content">
+      <h1>Dark Knight Records</h1>
+      <p>Where Technology Meets Music</p>
+      <div class="tech-decorations">
+        <svg class="tech-circle" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="45" stroke="#00ff8c" fill="none" stroke-width="2">
+            <animate attributeName="stroke-dasharray" from="0,283" to="283,0" dur="2s" repeatCount="indefinite" />
+          </circle>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <section id="game" class="section">
+    <div class="container">
+      <h2>Beat Matcher Game</h2>
+      <div class="game-container card">
+        <div class="game-score">Score: <span id="score">0</span></div>
+        <div class="game-pattern" id="pattern-display"></div>
+        <div class="game-controls">
+          <button id="start-game" class="game-button">Start Game</button>
+          <div id="beat-buttons" class="beat-grid">
+            <button class="beat-button" data-note="1"></button>
+            <button class="beat-button" data-note="2"></button>
+            <button class="beat-button" data-note="3"></button>
+            <button class="beat-button" data-note="4"></button>
+          </div>
+        </div>
+        <div class="game-message" id="game-message"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="artists" class="section">
+    <div class="container">
+      <h2>Featured Artists</h2>
+      <div class="artist-list">
+        <div class="artist card">
+          <div class="tech-frame"></div>
+          <img src="artist1.jpg" alt="Artist 1">
+          <h3>Artist 1</h3>
+          <p>Electronic Music Producer</p>
+          <div class="tech-stats">
+            <span>Tracks: 42</span>
+            <span>Genre: Techno</span>
+          </div>
+        </div>
+        <div class="artist card">
+          <div class="tech-frame"></div>
+          <img src="artist2.jpg" alt="Artist 2">
+          <h3>Artist 2</h3>
+          <p>Digital Audio Expert</p>
+          <div class="tech-stats">
+            <span>Tracks: 38</span>
+            <span>Genre: EDM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="releases" class="section">
+    <div class="container">
+      <h2>Latest Releases</h2>
+      <div class="release-list">
+        <div class="release card">
+          <div class="tech-frame"></div>
+          <img src="release1.jpg" alt="Release 1">
+          <h3>Digital Horizon</h3>
+          <p>A journey through electronic soundscapes</p>
+          <div class="tech-specs">
+            <span>BPM: 128</span>
+            <span>Format: WAV/MP3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Our Studio</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Digital Excellence</h3>
+          <p>State-of-the-art recording equipment and digital processing</p>
+          <ul class="tech-specs-list">
+            <li>24-bit/192kHz Recording</li>
+            <li>Pro Tools Ultimate</li>
+            <li>Neural DSP Processing</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Modern Production</h3>
+          <p>Advanced music production capabilities</p>
+          <ul class="tech-specs-list">
+            <li>Analog/Digital Hybrid Setup</li>
+            <li>MIDI Integration</li>
+            <li>Cloud Collaboration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contact-form" class="card">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="upload" class="section">
+    <div class="container">
+      <h2>Upload Your Track</h2>
+      <form id="upload-form" class="card">
+        <div class="form-group">
+          <label for="file">Select Audio File</label>
+          <input type="file" id="file" name="file" accept="audio/*" required>
+        </div>
+        <div class="tech-specs">
+          <span>Supported: WAV, MP3, AIFF</span>
+          <span>Max Size: 50MB</span>
+        </div>
+        <button type="submit">Upload Track</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Dark Knight Records | Advanced Audio Technology</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
