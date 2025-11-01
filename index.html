@@ -4,11 +4,32 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <script type="module" crossorigin src="/assets/index-Dla6ZdmG.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-n_ryQ3BS.css">
+
+    <!-- SEO Meta Tags -->
+    <title>Dark Knight Record</title>
+    <meta name="description" content="Dark Knight Record - A modern web application built with React and Vite" />
+    <meta name="theme-color" content="#242424" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Dark Knight Record" />
+    <meta property="og:description" content="A modern web application built with React and Vite" />
+    <meta property="og:type" content="website" />
+
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="/index-Dla6ZdmG.js" as="script" />
+    <link rel="preload" href="/index-n_ryQ3BS.css" as="style" />
+
+    <!-- Fixed Asset Paths (removed /assets/ prefix) -->
+    <script type="module" crossorigin src="/index-Dla6ZdmG.js"></script>
+    <link rel="stylesheet" crossorigin href="/index-n_ryQ3BS.css">
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <div style="text-align: center; padding: 2rem; font-family: system-ui, sans-serif;">
+        <h1>JavaScript Required</h1>
+        <p>This application requires JavaScript to run. Please enable JavaScript in your browser.</p>
+      </div>
+    </noscript>
   </body>
 </html>
